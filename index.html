@@ -1,0 +1,37 @@
+<!--
+Auteur: FauZaPespi
+Date: 26.08.2024 16:05
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaintOnline</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Draw and Export as PNG</h1>
+        <div class="controls">
+            <label for="red">Red:</label>
+            <input type="range" id="red" min="0" max="255" value="0">
+            <label for="green">Green:</label>
+            <input type="range" id="green" min="0" max="255" value="0">
+            <label for="blue">Blue:</label>
+            <input type="range" id="blue" min="0" max="255" value="0">
+            <div class="color-preview" id="colorPreview"></div>
+            
+            <label for="bgColor">Background:</label>
+            <input type="color" id="bgColor" value="#ffffff">
+
+            <input type="file" id="imageUploader" accept="image/*">
+            <button id="clearBtn">Clear</button>
+            <button id="exportBtn">Export as PNG</button>
+        </div>
+        <canvas id="drawingCanvas"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
